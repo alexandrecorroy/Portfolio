@@ -1,0 +1,12 @@
+site:
+  title: CORROY Alexandre - Application Developper PHP/Symfony
+  description: List of projects of new web developer & PHP/Symfony Applications
+
+nav:
+  portfolio: portfolio
+  about: about
+  contact: contact
+
+header:
+  title: Web Developer
+  subtitle: Web Developer - Developer Application PHP/Symfony

@@ -1,0 +1,12 @@
+site:
+  title: CORROY Alexandre - Développeur d'application PHP/Symfony
+  description: Liste des projets d'un développeur web / d'application PHP/Symfony Junior
+
+nav:
+  portfolio: portfolio
+  about: à propos
+  contact: contact
+
+header:
+  title: Développeur Web
+  subtitle: Développeur Web - Développeur d'application PHP/Symfony
