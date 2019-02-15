@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * final Class HomeResponder.
  */
-final class HomeResponder implements  HomeResponderInterface
+final class HomeResponder implements HomeResponderInterface
 {
 
     /**

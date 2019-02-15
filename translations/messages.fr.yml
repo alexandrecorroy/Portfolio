@@ -10,3 +10,12 @@ nav:
 header:
   title: Développeur Web
   subtitle: Développeur Web - Développeur d'application PHP/Symfony
+
+portfolio:
+  context: Contexte
+  comp: Compétences validées
+  resources: Ressources
+  close: Fermer le projet
+  demo: Voir démo en ligne
+  files: Fichiers
+  documentation: Documentation

@@ -10,3 +10,12 @@ nav:
 header:
   title: Web Developer
   subtitle: Web Developer - Developer Application PHP/Symfony
+
+portfolio:
+  context: Context
+  comp: Validated skills
+  resources: Resources
+  close: Close Project
+  demo: See Demo Online
+  files: Files
+  documentation: Documentation
