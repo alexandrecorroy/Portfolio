@@ -65,20 +65,20 @@
 <!-- About Section -->
 <section class="bg-primary text-white mb-0" id="about">
     <div class="container">
-        <h2 class="text-center text-uppercase text-white">About</h2>
+        <h2 class="text-center text-uppercase text-white">{{ 'about.title'|trans }}</h2>
         <hr class="star-light mb-5">
         <div class="row">
             <div class="col-lg-4 ml-auto">
-                <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                <p class="lead">{{ 'about.detail1'|trans }}</p>
             </div>
             <div class="col-lg-4 mr-auto">
-                <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                <p class="lead">{{ 'about.detail2'|trans }}</p>
             </div>
         </div>
         <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" href="#">
+            <a class="btn btn-xl btn-outline-light" href="https://drive.google.com/open?id=1KKl3eu505Tkqktcgc1KZQizEoqwoTTue" target="_blank">
                 <i class="fa fa-download mr-2"></i>
-                Download Now!
+                {{ 'about.cv'|trans }}
             </a>
         </div>
     </div>
@@ -90,45 +90,30 @@
 <footer class="footer text-center">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Location</h4>
-                <p class="lead mb-0">2215 John Daniel Drive
-                    <br>Clark, MO 65243</p>
+            <div class="col-md-6 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">{{ 'location.title'|trans }}</h4>
+                <p class="lead mb-0">Bruay sur l'escaut 59860
+                <br>{{ 'location.description'|trans }}</p>
             </div>
-            <div class="col-md-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <div class="col-md-6 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">{{ 'social.title'|trans }}</h4>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/yorkknew" target="_blank">
                             <i class="fa fa-fw fa-twitter"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/acorroy/" target="_blank">
                             <i class="fa fa-fw fa-linkedin"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                            <i class="fa fa-fw fa-dribbble"></i>
+                        <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/alexandrecorroy" target="_blank">
+                            <i class="fa fa-fw fa-github"></i>
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-md-4">
-                <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-                    <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
             </div>
         </div>
     </div>

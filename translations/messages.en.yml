@@ -19,3 +19,24 @@ portfolio:
   demo: See Demo Online
   files: Files
   documentation: Documentation
+
+about:
+  title: About
+  detail1: With several years of experience in entrepreneurship as a webmaster in the creation and management of my own sites, I am now destined for a salary career. Mastering the basics of web creation (HTML, CSS and PHP) and having followed a diploma training Symfony Application Developer Level 2 (Bac +3/4), my biggest assets will be my sense of communication and my market knowledge.
+  detail2: Today, I am looking for a job in CDD / CDI of PHP / Symfony Developer with possibility of evolution in the medium or long term project management. Raising skills and developing my experience is my priority in the short term.
+  cv: Download my CV!
+
+contact:
+  title: Contactez-moi
+  name: Name
+  email: Email Address
+  phone: Phone number
+  message: Message
+  send: Send
+
+location:
+  title: Location
+  description: 4 Miles From Valenciennes
+
+social:
+  title: Around the web
