@@ -13,7 +13,9 @@ declare(strict_types=1);
 
 namespace App\UI\Action\Interfaces;
 
+use App\Service\Interfaces\MailerInterface;
 use App\UI\Responder\Interfaces\HomeResponderInterface;
+use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -22,6 +24,17 @@ use Symfony\Component\HttpFoundation\Response;
  */
 interface HomeActionInterface
 {
+    /**
+     * HomeActionInterface constructor.
+     *
+     * @param FormFactoryInterface $formFactory
+     * @param MailerInterface $mailer
+     */
+    public function __construct(
+        FormFactoryInterface $formFactory,
+        MailerInterface $mailer
+    );
+
     /**
      * @param Request $request
      * @param HomeResponderInterface $responder

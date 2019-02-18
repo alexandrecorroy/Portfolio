@@ -41,21 +41,14 @@ final class HomeAction implements HomeActionInterface
     private $mailer;
 
     /**
-     * @var TranslatorInterface
-     */
-    private $translator;
-
-    /**
      * {@inheritDoc}
      */
     public function __construct(
         FormFactoryInterface $formFactory,
-        MailerInterface $mailer,
-        TranslatorInterface $translator
+        MailerInterface $mailer
     ) {
         $this->formFactory      = $formFactory;
         $this->mailer           = $mailer;
-        $this->translator       = $translator;
     }
 
     /**
