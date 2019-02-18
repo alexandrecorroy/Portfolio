@@ -5,43 +5,45 @@
         <hr class="star-dark mb-5">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                    <div class="control-group">
-                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                            <label>{{ 'contact.name'|trans }}</label>
-                            <input class="form-control" id="name" type="text" placeholder="{{ 'contact.name'|trans }}" required="required">
-                            <p class="help-block text-danger"></p>
-                        </div>
+
+                {% for flashMessage in app.session.flashbag.get('notice') %}
+                    <div class="alert alert-success" role="alert">
+                        {{ flashMessage }}
                     </div>
-                    <div class="control-group">
-                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                            <label>{{ 'contact.email'|trans }}</label>
-                            <input class="form-control" id="email" type="email" placeholder="{{ 'contact.email'|trans }}" required="required">
-                            <p class="help-block text-danger"></p>
-                        </div>
+                {% endfor %}
+
+                {{ form_start(form) }}
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {{ form_row(form.name) }}
+                        <p class="help-block text-danger">{{ form_errors(form.name) }}</p>
                     </div>
-                    <div class="control-group">
-                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                            <label>{{ 'contact.phone'|trans }}</label>
-                            <input class="form-control" id="phone" type="tel" placeholder="{{ 'contact.phone'|trans }}" required="required">
-                            <p class="help-block text-danger"></p>
-                        </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {{ form_row(form.email) }}
+                        <p class="help-block text-danger">{{ form_errors(form.email) }}</p>
                     </div>
-                    <div class="control-group">
-                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                            <label>Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="{{ 'contact.message'|trans }}" required="required"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {{ form_row(form.phone) }}
+                        <p class="help-block text-danger">{{ form_errors(form.phone) }}</p>
                     </div>
-                    <br>
-                    <div id="success"></div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">{{ 'contact.send'|trans }}</button>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {{ form_row(form.message) }}
+                        <p class="help-block text-danger">{{ form_errors(form.message) }}</p>
                     </div>
-                </form>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">{{ 'contact.send'|trans }}</button>
+                </div>
+                {{ form_end(form) }}
+
             </div>
         </div>
     </div>

@@ -27,7 +27,7 @@ about:
   cv: Download my CV!
 
 contact:
-  title: Contactez-moi
+  title: Contact me
   name: Name
   email: Email Address
   phone: Phone number
@@ -40,3 +40,11 @@ location:
 
 social:
   title: Around the web
+
+error:
+  not_blank: This field connot be empty
+  not_email: This is not a valid email
+
+flash:
+  email:
+    success: Your email was correctly sent

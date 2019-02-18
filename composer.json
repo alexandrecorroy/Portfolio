@@ -1,4 +1,6 @@
 {
+    "name": "Portfolio",
+    "description": "portfolio of my projects",
     "type": "project",
     "license": "proprietary",
     "require": {

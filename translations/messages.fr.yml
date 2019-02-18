@@ -39,4 +39,13 @@ location:
   description: A 5km de Valenciennes
 
 social:
-  title: Moi sur le web
+  title: Me suivre sur le web
+
+error:
+  not_blank: Ce champs ne peut pas être vide
+  not_email: Adresse email non valide
+
+
+flash:
+  email:
+    success: Votre email a été correctement envoyé
