@@ -1,0 +1,50 @@
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">{{ 'contact.title'|trans }}</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                {% for flashMessage in app.session.flashbag.get('notice') %}
+                    <div class="alert alert-success" role="alert">
+                        {{ flashMessage }}
+                    </div>
+                {% endfor %}
+
+                {{ form_start(form) }}
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {{ form_row(form.name) }}
+                        <p class="help-block text-danger">{{ form_errors(form.name) }}</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {{ form_row(form.email) }}
+                        <p class="help-block text-danger">{{ form_errors(form.email) }}</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {{ form_row(form.phone) }}
+                        <p class="help-block text-danger">{{ form_errors(form.phone) }}</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        {{ form_row(form.message) }}
+                        <p class="help-block text-danger">{{ form_errors(form.message) }}</p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">{{ 'contact.send'|trans }}</button>
+                </div>
+                {{ form_end(form) }}
+
+            </div>
+        </div>
+    </div>
+</section>

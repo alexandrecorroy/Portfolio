@@ -1,0 +1,51 @@
+site:
+  title: CORROY Alexandre - Développeur d'application PHP/Symfony
+  description: Liste des projets d'un développeur web / d'application PHP/Symfony Junior
+
+nav:
+  portfolio: portfolio
+  about: à propos
+  contact: contact
+
+header:
+  title: Développeur Web
+  subtitle: Développeur Web - Développeur d'application PHP/Symfony
+
+portfolio:
+  context: Contexte
+  comp: Compétences validées
+  resources: Ressources
+  close: Fermer le projet
+  demo: Voir démo en ligne
+  files: Fichiers
+  documentation: Documentation
+
+about:
+  title: A Propos
+  detail1: Fort d'une expérience de plusieurs années dans l'entrepreneuriat en tant que webmaster dans la création et la gestion de mes propres sites, je me destine désormais à une carrière salariale. Maitrisant les bases de la création web (HTML, CSS et PHP) et ayant suivi une formation diplômante de Développeur d'Application Symfony de Niveau 2 (Bac +3/4), mes plus gros atouts seront mon sens de la communication ainsi que ma connaissance du marché.
+  detail2: Aujourd’hui, je suis à la recherche d’un poste en CDD/CDI de Développeur PHP/Symfony avec possibilité d’évolution dans la gestion de projet à moyen ou long terme. La monté en compétences et le développement de mon expérience étant ma priorité à court terme.
+  cv: Télécharger mon CV !
+
+contact:
+  title: Contactez-moi
+  name: Nom
+  email: Adresse email
+  phone: Numéro de téléphone
+  message: Message
+  send: Envoyer
+
+location:
+  title: Localisation
+  description: A 5km de Valenciennes
+
+social:
+  title: Me suivre sur le web
+
+error:
+  not_blank: Ce champs ne peut pas être vide
+  not_email: Adresse email non valide
+
+
+flash:
+  email:
+    success: Votre email a été correctement envoyé

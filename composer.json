@@ -1,4 +1,6 @@
 {
+    "name": "Portfolio",
+    "description": "portfolio of my projects",
     "type": "project",
     "license": "proprietary",
     "require": {
@@ -18,6 +20,7 @@
         "symfony/security-bundle": "*",
         "symfony/serializer-pack": "*",
         "symfony/swiftmailer-bundle": "^3.1",
+        "symfony/translation": "*",
         "symfony/twig-bundle": "*",
         "symfony/validator": "*",
         "symfony/web-link": "*",
@@ -73,7 +76,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "4.1.*"
+            "require": "4.2.*"
         }
     }
 }
