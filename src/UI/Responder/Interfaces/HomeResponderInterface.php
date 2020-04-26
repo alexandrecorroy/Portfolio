@@ -18,6 +18,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
+use Twig\Environment;
 
 /**
  * Interface HomeResponderInterface.
@@ -27,13 +28,13 @@ interface HomeResponderInterface
     /**
      * HomeResponderInterface constructor.
      *
-     * @param \Twig_Environment $twig
+     * @param Environment $twig
      * @param FlashBagInterface $flashBag
      * @param RouterInterface $router
      * @param TranslatorInterface $translator
      */
     public function __construct(
-        \Twig_Environment $twig,
+        Environment $twig,
         FlashBagInterface $flashBag,
         RouterInterface $router,
         TranslatorInterface $translator

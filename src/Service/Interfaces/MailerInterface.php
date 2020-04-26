@@ -13,6 +13,8 @@ declare(strict_types=1);
 
 namespace App\Service\Interfaces;
 
+use Twig\Environment;
+
 /**
  * Interface MailerInterface.
  */
@@ -21,11 +23,11 @@ interface MailerInterface
     /**
      * MailerInterface constructor.
      *
-     * @param \Twig_Environment $twig
+     * @param Environment $twig
      * @param \Swift_Mailer $mailer
      */
     public function __construct(
-        \Twig_Environment $twig,
+        Environment $twig,
         \Swift_Mailer $mailer
     );
 

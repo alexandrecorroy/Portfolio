@@ -10,6 +10,7 @@ declare(strict_types=1);
  */
 namespace App\Service;
 use App\Service\Interfaces\MailerInterface;
+use Twig\Environment;
 
 /**
  * Class Mailer.
@@ -17,7 +18,7 @@ use App\Service\Interfaces\MailerInterface;
 final class Mailer implements MailerInterface
 {
     /**
-     * @var \Twig_Environment
+     * @var Environment
      */
     private $twig;
     /**
@@ -28,7 +29,7 @@ final class Mailer implements MailerInterface
      * {@inheritdoc}
      */
     public function __construct(
-        \Twig_Environment $twig,
+        Environment $twig,
         \Swift_Mailer $mailer
     ) {
         $this->twig = $twig;

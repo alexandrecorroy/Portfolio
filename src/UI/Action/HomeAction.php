@@ -21,11 +21,19 @@ use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * final Class HomeAction.
- * @Route("/{_locale}", name="home", methods={"GET","POST"}, defaults={"_locale"="fr"}, requirements={"_locale"="en|fr"})
+ * @Route(
+ *     "/{_locale}",
+ *     name="home",
+ *     methods={"GET","POST"},
+ *     locale="fr",
+ *     format="html",
+ *     requirements={
+ *         "_locale": "en|fr"
+ *     }
+ * )
  *
  */
 final class HomeAction implements HomeActionInterface
