@@ -42,8 +42,8 @@ final class Mailer implements MailerInterface
         $form
     ): void {
         $message = (new \Swift_Message('Portfolio Alexandrecorroy.fr'))
-            ->setFrom(getenv('MAILER_FROM'))
-            ->setTo(getenv('MAILER_TO'))
+            ->setFrom($_ENV['MAILER_FROM'])
+            ->setTo($_ENV['MAILER_TO'])
             ->setBody(
                 $this->twig->render(
                     'emails/contact.html.twig',
