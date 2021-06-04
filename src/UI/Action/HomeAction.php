@@ -17,6 +17,7 @@ use App\Form\ContactType;
 use App\Service\Interfaces\MailerInterface;
 use App\UI\Action\Interfaces\HomeActionInterface;
 use App\UI\Responder\Interfaces\HomeResponderInterface;
+use ReCaptcha\ReCaptcha;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -53,7 +54,7 @@ final class HomeAction implements HomeActionInterface
      */
     public function __construct(
         FormFactoryInterface $formFactory,
-        MailerInterface $mailer
+        MailerInterface $mailer,
     ) {
         $this->formFactory      = $formFactory;
         $this->mailer           = $mailer;
@@ -72,8 +73,10 @@ final class HomeAction implements HomeActionInterface
         $form->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid()) {
-            $this->mailer->sendMail($form->getData());
-            return $responder($form, true);
+
+                $this->mailer->sendMail($form->getData());
+                return $responder($form, true);
+
         }
 
         return $responder($form);
