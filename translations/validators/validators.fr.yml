@@ -1,0 +1,3 @@
+karser_recaptcha3:
+  message: Échec de validation du captcha !
+  message_missing_value: Captcha invalide !

@@ -1,0 +1,3 @@
+karser_recaptcha3:
+  message: Your computer or network may be sending automated queries
+  message_missing_value: The captcha value is missing

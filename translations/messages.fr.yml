@@ -45,7 +45,10 @@ error:
   not_blank: Ce champs ne peut pas être vide
   not_email: Adresse email non valide
 
-
 flash:
   email:
     success: Votre email a été correctement envoyé
+
+karser_recaptcha3:
+  message: Échec de validation du captcha !
+  message_missing_value: Captcha invalide !
