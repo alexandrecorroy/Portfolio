@@ -31,7 +31,7 @@ Le site présente mes **compétences**, mon **expérience**, mes **projets** et 
 - **Docker** ≥ 20.10  
 - **Docker Compose** ≥ 2.0
 
-### 🚀 Lancer le projet
+### Lancer le projet
 
 Clone le dépôt :
 ```bash
