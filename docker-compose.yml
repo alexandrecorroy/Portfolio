@@ -1,0 +1,36 @@
+services:
+  app:
+    build: .
+    container_name: portfolio_app
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+      - /var/www/html/vendor
+    expose:
+      - "9000"
+    environment:
+      APP_ENV: dev
+      APP_DEBUG: 1
+    networks:
+      - portfolio_net
+
+  web:
+    image: nginx:stable-alpine
+    container_name: portfolio_nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - app
+    networks:
+      - portfolio_net
+
+networks:
+  portfolio_net:
+
+volumes:
+  db_data:
