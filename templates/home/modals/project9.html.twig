@@ -1,0 +1,74 @@
+<!-- Portfolio Modal 9 -->
+<div class="portfolio-modal mfp-hide" id="portfolio-modal-9">
+    <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+            <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-secondary text-uppercase mb-2">Eshop (2015)</h2>
+                    <ul class="list-inline text-secondary text-uppercase">
+                        <li class="list-inline-item">PHP 5.6</li>|
+                        <li class="list-inline-item">Apache</li>|
+                        <li class="list-inline-item">CodeIgniter</li>|
+                        <li class="list-inline-item">MySQL 5.7</li>|
+                        <li class="list-inline-item">HTML</li>|
+                        <li class="list-inline-item">CSS</li>|
+                        <li class="list-inline-item">Docker</li>|
+                        <li class="list-inline-item">GitHub</li>
+                    </ul>
+                    <hr class="star-dark mb-5">
+                    <img class="img-fluid mb-5" src="{{ asset('assets/img/portfolio/eshop.png') }}" alt="Eshop - Boutique de jeux vidéo">
+                    <p class="text-justify">
+                        <strong>Eshop</strong> est un site e-commerce de jeux vidéo réalisé en 2015 pour mon portfolio.  
+                        Le site propose un parcours complet simulé : création de compte, ajout au panier, commande, remises, modes de livraison (sans paiement réel) et un back-office complet d’administration.
+                    </p>
+                    <h3 class="text-secondary text-uppercase mt-4 mb-3">Fonctionnalités principales</h3>
+                    <ul class="text-justify">
+                        <li><b>Front-office :</b> catalogue de jeux, fiches produits avec images et avis, panier, codes promo, modes de livraison simulés, création de compte client et passage de commande.</li>
+                        <li><b>Back-office :</b> gestion des produits (CRUD, stock, images), catégories, utilisateurs, commandes (liste et statuts), codes promo et frais de livraison.</li>
+                    </ul>
+
+                    <h3 class="text-secondary text-uppercase mt-4 mb-3">Comptes de démo</h3>
+                    <ul class="text-justify">
+                        <li><b>Admin :</b> admin / admin</li>
+                        <li><b>Utilisateur :</b> user / user</li>
+                    </ul>
+
+                    <h3 class="text-secondary text-uppercase mt-4 mb-3">Stack technique</h3>
+                    <ul class="text-justify">
+                        <li>PHP 5.6 + Apache (Framework CodeIgniter)</li>
+                        <li>MySQL 5.7 avec import automatique via <code>ecommerce.sql</code></li>
+                        <li>Configuration applicative via <code>config.ini</code></li>
+                        <li>Docker Compose pour orchestrer les services web et base de données</li>
+                    </ul>
+
+                    <h3 class="text-secondary text-uppercase m-5">Compétences développées :</h3>
+                    <ul class="fa-ul text-justify">
+                        <li><i class="fa-li fa fa-check-square"></i>Développer une boutique en ligne complète avec gestion front et back-office</li>
+                        <li><i class="fa-li fa fa-check-square"></i>Gérer la persistance des données avec MySQL et PHP</li>
+                        <li><i class="fa-li fa fa-check-square"></i>Implémenter une architecture MVC avec CodeIgniter</li>
+                        <li><i class="fa-li fa fa-check-square"></i>Créer un environnement isolé avec Docker Compose</li>
+                        <li><i class="fa-li fa fa-check-square"></i>Mettre en œuvre un système CRUD et une interface d’administration</li>
+                    </ul>
+
+                    <h3 class="text-secondary text-uppercase m-5">{{ 'portfolio.resources'|trans }}</h3>
+                    <div class="btn-toolbar justify-content-center pb-5" role="toolbar">
+                        <a class="btn btn-secondary btn-md mr-4" href="https://alexandrecorroy.fr/eshop/" target="_blank">
+                            <i class="fa fa-play"></i> {{ 'portfolio.demo'|trans }}
+                        </a>
+                        <a class="btn btn-secondary btn-md mr-4" href="https://github.com/alexandrecorroy/eshop" target="_blank">
+                            <i class="fa fa-github"></i> Github
+                        </a>
+                    </div>
+
+                    <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                        <i class="fa fa-close"></i>
+                        {{ 'portfolio.close'|trans }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
