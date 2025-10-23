@@ -1,0 +1,70 @@
+<!-- Portfolio Modal 8 -->
+<div class="portfolio-modal mfp-hide" id="portfolio-modal-8">
+    <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+            <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-secondary text-uppercase mb-2">AUTOMATISATION INFRASTRUCTURE DOLIBARR</h2>
+                    <ul class="list-inline text-secondary text-uppercase">
+                        <li class="list-inline-item">Devops</li>|
+                        <li class="list-inline-item">Terraform</li>|
+                        <li class="list-inline-item">Ansible</li>|
+                        <li class="list-inline-item">Gitlab CI/CD</li>|
+                        <li class="list-inline-item">Docker</li>
+                    </ul>
+                    <hr class="star-dark mb-5">
+                    <img class="img-fluid mb-5" src="{{ asset('assets/img/portfolio/dolibarr.png') }}" alt="dolibarr infra">
+
+                    <img class="img-fluid mb-5" src="{{ asset('assets/img/portfolio/gitlab.png') }}" alt="gitlab">
+                    <p class="text-justify">
+                        Automatiser la création complète de l'infrastructure nécessaire au développement et test de l'application Dolibarr (ERP/CRM en PHP) en utilisant les outils DevOps modernes.
+                    </p>
+                    <p class="text-justify">
+                        Livrables attendus :<br>
+                    </p>
+                    <ul class="text-justify">
+                        <li>Infrastructure entièrement automatisée (Terraform)</li>
+                        <li>Configuration automatisée des serveurs (Ansible)</li>
+                        <li>Pipeline CI/CD (GitLab)</li>
+                        <li>Documentation technique complète</li>
+                        <li>Environnement de développement complet</li>
+                    </ul>
+                    <p class="text-justify">
+                        Spécifications matérielles :<br>
+                    </p>
+                    <ul class="text-justify">
+                        <li>| Serveur | IP | vCPU | RAM | Disque | OS | Rôle |</li>
+                        <li>**GitLab** | 192.168.1.10 | 4 | 8GB | 50GB | Ubuntu 22.04 | Git + CI/CD + Registry</li>
+                        <li>**Management** | 192.168.1.11 | 2 | 4GB | 50GB | Ubuntu 22.04 | Terraform + Ansible</li>
+                        <li>**Dev** | 192.168.1.12 | 2 | 4GB | 50GB | Ubuntu 22.04 | Apache + PHP + Dolibarr</li>
+                        <li>**Test** | 192.168.1.13 | 2 | 6GB | 50GB | Ubuntu 22.04 | Apache + PHP + Dolibarr</li>
+                        <li>**Database** | 192.168.1.14 | 2 | 8GB | 50GB | Ubuntu 22.04 | MySQL 8.0 + PHPMyAdmin</li>
+                        <li>**Proxy** | 192.168.1.15 | 1 | 4GB | 30GB | Ubuntu 22.04 | Nginx + SSL</li>
+                    </ul>
+                    <p class="text-justify">
+                        Contraintes techniques :<br>
+                    </p>
+                    <ul class="text-justify">
+                        <li>Utiliser exclusivement le provider `telmate/proxmox` version 3.x pour Terraform</li>
+                        <li>Authentification par clés SSH uniquement (pas de mots de passe)</li>
+                        <li>Configuration réseau statique pour tous les serveurs</li>
+                    </ul>
+
+                    <h3 class="text-secondary text-uppercase m-5">{{ 'portfolio.resources'|trans }}</h3>
+                    <div class="btn-toolbar justify-content-center pb-5" role="toolbar">
+                        <a class="btn btn-secondary btn-md mr-4" href="https://github.com/alexandrecorroy/dolibarr-terraform" target="_blank"><i class="fa fa-github"></i> Terraform</a>
+                        <a class="btn btn-secondary btn-md mr-4" href="https://github.com/alexandrecorroy/dolibarr-ansible" target="_blank"><i class="fa fa-github"></i> Ansible</a>
+                        <a class="btn btn-secondary btn-md mr-4" href="https://github.com/alexandrecorroy/dolibarr-gitlab-ci" target="_blank"><i class="fa fa-github"></i> Gitlab CI/CD</a>
+                        <a class="btn btn-secondary btn-md mr-4" href="https://github.com/alexandrecorroy/dolibarr-dev-local" target="_blank"><i class="fa fa-github"></i> Environnement de dev</a>
+                    </div>
+                    <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                        <i class="fa fa-close"></i>
+                        {{ 'portfolio.close'|trans }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

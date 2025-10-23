@@ -1,5 +1,5 @@
 site:
-  title: CORROY Alexandre - Développeur d'application PHP/Symfony
+  title: CORROY Alexandre - Freelance / DevSecOps / Développeur d'application PHP/Symfony
   description: Liste des projets d'un développeur web / d'application PHP/Symfony Junior
 
 nav:
@@ -8,8 +8,8 @@ nav:
   contact: contact
 
 header:
-  title: Développeur Web
-  subtitle: Développeur Web - Développeur d'application PHP/Symfony
+  title: DevOps - Développeur Web
+  subtitle: DevSecOps -Développeur Web - Développeur d'application PHP/Symfony
 
 portfolio:
   context: Contexte
@@ -21,9 +21,9 @@ portfolio:
   documentation: Documentation
 
 about:
-  title: A Propos
-  detail1: Fort d'une expérience de plusieurs années dans l'entrepreneuriat en tant que webmaster dans la création et la gestion de mes propres sites, je me destine désormais à une carrière salariale. Maitrisant les bases de la création web (HTML, CSS et PHP) et ayant suivi une formation diplômante de Développeur d'Application Symfony de Niveau 2 (Bac +3/4), mes plus gros atouts seront mon sens de la communication ainsi que ma connaissance du marché.
-  detail2: Aujourd’hui, je suis à la recherche d’un poste en CDD/CDI de Développeur PHP/Symfony avec possibilité d’évolution dans la gestion de projet à moyen ou long terme. La monté en compétences et le développement de mon expérience étant ma priorité à court terme.
+  title: À propos
+  detail1: Passionné par le web depuis plus de 15 ans, j’ai évolué à travers de nombreux projets personnels et professionnels dans la création, la gestion et l’optimisation de sites internet. Fort de 6 années d’expérience en développement PHP/Symfony et WordPress, j’allie savoir-faire technique et vision globale des projets digitaux. 
+  detail2: Aujourd’hui, je mets mes compétences au service d’entreprises et de clients en tant que Développeur PHP/Symfony et DevSecOps junior, que ce soit en freelance ou dans le cadre d’un poste salarié (CDD/CDI). Ma priorité est de continuer à monter en compétences tout en apportant des solutions fiables, sécurisées et performantes.
   cv: Télécharger mon CV !
 
 contact:

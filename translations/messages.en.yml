@@ -1,5 +1,5 @@
 site:
-  title: CORROY Alexandre - Application Developper PHP/Symfony
+  title: CORROY Alexandre - Freelance / DevSecOps / Application Developper PHP/Symfony
   description: List of projects of new web developer & PHP/Symfony Applications
 
 nav:
@@ -8,8 +8,8 @@ nav:
   contact: contact
 
 header:
-  title: Web Developer
-  subtitle: Web Developer - Developer Application PHP/Symfony
+  title: DevOps - Web Developer
+  subtitle: DevSecOps - Web Developer - Developer Application PHP/Symfony
 
 portfolio:
   context: Context
@@ -22,8 +22,8 @@ portfolio:
 
 about:
   title: About
-  detail1: With several years of experience in entrepreneurship as a webmaster in the creation and management of my own sites, I am now destined for a salary career. Mastering the basics of web creation (HTML, CSS and PHP) and having followed a diploma training Symfony Application Developer Level 2 (Bac +3/4), my biggest assets will be my sense of communication and my market knowledge.
-  detail2: Today, I am looking for a job in CDD / CDI of PHP / Symfony Developer with possibility of evolution in the medium or long term project management. Raising skills and developing my experience is my priority in the short term.
+  detail1: With over 15 years of experience in the web industry, I have worked on numerous personal and professional projects involving the creation, management, and optimization of websites. With 6 years of hands-on experience as a PHP/Symfony and WordPress developer, I combine solid technical expertise with a comprehensive understanding of digital projects. 
+  detail2: Today, I offer my skills to companies and clients as a PHP/Symfony Developer and Junior DevSecOps, whether as a freelancer or in a full-time position (CDD/CDI). My main goal is to keep improving my technical skills while delivering reliable, secure, and high-performance solutions.
   cv: Download my CV!
 
 contact:
